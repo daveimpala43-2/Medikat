@@ -1,0 +1,172 @@
+/*
+COLORES UTILIZADOS PARA EL DESARROLLO DE LA PAGINA
+
+AZUL: #64D9EE
+AZUL CLARO: #64D9EE;
+AZUL FUERTE: #142850
+AZUL MEDIO: #27496d
+GRIS: #FFFFFF
+GRIS OSCURO: #343838
+
+
+PARA EFECTOS
+
+MORADO: #5D009E
+VERDE: #94EE64
+
+
+
+*/
+
+
+/* ESTILOS DE LA PAGINA */
+
+nav {
+    width: 100%;
+}
+
+.logo {
+    width: 5%;
+    height: 5%;
+    margin-right: 30px;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.display-7 {
+    color: #343838;
+    font-size: 120%;
+    font-weight: 400;
+    line-height: 1.7;
+    border: 5px;
+    ;
+}
+
+.bg-light {
+    background-color: #64D9EE !important;
+}
+
+.item1 {
+    background-color: #64D9EE;
+    width: 100%;
+    padding: 1%;
+}
+
+.item2 {
+    background-color: #64D9EE;
+    width: 100%;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0%;
+    padding: 1%;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 50% !important;
+}
+
+.carr {
+    margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-color: #64D9EE;
+}
+
+.footer .cabeza {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.cont1 {
+    background-color: #94EE64;
+}
+
+.cont2 {
+    background-color: #94EE64;
+}
+
+.cont3 {
+    background-color: #94EE64;
+}
+
+.cont4 {
+    background-color: #94EE64;
+}
+
+.cont5 {
+    background-color: #94EE64;
+}
+
+.contenedor .botton {
+    background-color: #64D9EE;
+}
+
+.contenedor .botton:hover {
+    background-color: #94EE64;
+}
+
+.row {
+    margin: 0% !important;
+}
+
+.item1 .row .card {
+    margin: .5%;
+    width: 32%;
+}
+
+
+/* FIN ESTILOS DE LA PAGINA */
+
+
+/* GRID PARA LA PAGINA */
+
+.contenedor {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: minmax(120px, 2fr) minmax(121px, 1fr);
+    grid-template-rows: minmax(150px, auto);
+}
+
+.footer {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-template-areas: "cab cab cab";
+}
+
+.footer .cabeza {
+    grid-column-start: cab;
+    grid-column-end: cab;
+}
+
+
+/* FIN DE GRID */
+
+
+/* MEDIA */
+
+@media screen and (max-width: 600px) {
+    .item2 {
+        display: none;
+    }
+    .contenedor {
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: minmax(120px, 1fr);
+        grid-template-rows: minmax(150px, auto);
+    }
+    .item1 .row .card {
+        margin: .5%;
+        width: 100%;
+    }
+}
