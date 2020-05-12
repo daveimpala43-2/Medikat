@@ -60,7 +60,7 @@
               <div class="card-body">
                 <h5 class="card-title">Efectos del covid</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn botton">Ver mas</a>
+                <a href="#" class="btn botton" data-toggle="modal" data-target="#exampleModalScrollable">Ver mas</a>
               </div>
             </div>
 
@@ -94,6 +94,7 @@
 </div>
 
 <?php
+require_once('complementos/modal.php');
  require_once('layouts/footer.php');
 ?>
   </body>

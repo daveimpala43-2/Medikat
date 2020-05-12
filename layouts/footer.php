@@ -21,12 +21,12 @@
             <div class="derecho">
             </div>
             <div class="face">
-              <ion-icon name="logo-facebook">  </ion-icon> <h7>Facebook</h7>
+              <ion-icon name="logo-facebook">  </ion-icon> <h7>Medikat</h7>
             </div>
             <div class="derecho">
             </div>
             <div class="face">
-             <ion-icon name="logo-twitter"></ion-icon> <h7>Twitter</h7>
+             <ion-icon name="logo-twitter"></ion-icon> <h7>@Medikat</h7>
             </div>
         </div>
         <div class="cont3">
@@ -37,7 +37,7 @@
           <div class="phone"> <ion-icon name="call-outline"></ion-icon> 55-4324-3454</div>
           <div class="derecho">
           </div>
-          <div class="phone"> <ion-icon name="mail-outline"></ion-icon> contac@medikat.com </div>
+          <div class="phone"> <ion-icon name="mail-outline"></ion-icon> contacto  @medikat.com </div>
           </div>
         <div class="cont4">
           <div class="derecho">
