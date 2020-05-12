@@ -86,23 +86,26 @@ body {
 }
 
 .cont1 {
-    background-color: #94EE64;
+    text-align: center;
 }
 
 .cont2 {
-    background-color: #94EE64;
+    padding: 1%;
+    text-align: center;
 }
 
 .cont3 {
-    background-color: #94EE64;
+    text-align: center;
 }
 
-.cont4 {
-    background-color: #94EE64;
+.cont4 .logo {
+    width: 20%;
+    height: auto;
 }
 
 .cont5 {
-    background-color: #94EE64;
+    text-align: center;
+    padding-top: 5%;
 }
 
 .contenedor .botton {
@@ -120,6 +123,22 @@ body {
 .item1 .row .card {
     margin: .5%;
     width: 32%;
+}
+
+.Redes-sol {
+    font-size: 20%;
+}
+
+h7 a {
+    color: #343838;
+}
+
+h7 a:hover {
+    color: #94EE64;
+}
+
+.face {
+    text-align: center;
 }
 
 
@@ -140,12 +159,36 @@ body {
     grid-gap: 2px;
     grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
     grid-template-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
-    grid-template-areas: "cab cab cab";
+    grid-template-areas: "cab cab cab" "ubi redes contacto" "logo drechos espacio";
 }
 
 .footer .cabeza {
     grid-column-start: cab;
     grid-column-end: cab;
+}
+
+.cont1 {
+    display: grid;
+    grid-template-columns: minmax(2px, 20px) minmax(10px, 1fr);
+    grid-template-areas: "espacio icono";
+}
+
+.cont2 {
+    display: grid;
+    grid-template-columns: minmax(2px, 20px) minmax(10px, 1fr);
+    grid-template-rows: minmax(20px, auto) minmax(20px, auto) minmax(20px, auto);
+}
+
+.cont3 {
+    display: grid;
+    grid-template-columns: minmax(2px, 20px) minmax(10px, 1fr);
+    grid-template-rows: minmax(20px, auto) minmax(20px, auto) minmax(20px, auto);
+}
+
+.cont4 {
+    display: grid;
+    grid-template-columns: minmax(2px, 20px) minmax(10px, 1fr);
+    grid-template-rows: minmax(20px, auto);
 }
 
 
@@ -167,5 +210,25 @@ body {
     .item1 .row .card {
         margin: .5%;
         width: 100%;
+    }
+    .cont1 {
+        display: none;
+    }
+    .cont4 {
+        display: none;
+    }
+    h7 {
+        font-size: 13px;
+    }
+    .visible-ubi {
+        display: none;
+    }
+    .cont5 {
+        grid-column-start: logo;
+        grid-column-end: espacio;
+    }
+    .cont3 {
+        grid-column-start: redes;
+        grid-column-end: contacto;
     }
 }
