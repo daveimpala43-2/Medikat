@@ -41,6 +41,12 @@
                     <label for="email">Correo Electronico</label>
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
+                <div class="form-group pass">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" name="pass" id="pass">
+                    <label for="c-pass">Confirma el password</label>
+                    <input type="password" class="form-control" name="c-pass" id="c-pass">
+                </div>
                 <div class="Registrame">
                     <button class="btn btn-primary" id="registrar">Registrar</button>
                 </div>

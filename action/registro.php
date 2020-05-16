@@ -10,7 +10,8 @@ if($si[0] == 0){
     $ape1=$_POST['ape1'];
     $ape2=$_POST['ape2'];
     $tele=$_POST['tele'];
-    echo $sql = "INSERT INTO user (`nom`, `ape1`, `ape2`, `email`, `telefono`) VALUES ('$nom','$ape1','$ape2','$email','$tele')";
+    $pass = password_hash($_POST['pass'],PASSWORD_DEFAULT);
+    $sql = "INSERT INTO user (`nom`, `ape1`, `ape2`, `email`, `telefono`,`password`) VALUES ('$nom','$ape1','$ape2','$email','$tele','$pass')";
     
     try {
         $val = $db->query($sql);

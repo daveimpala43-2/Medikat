@@ -234,7 +234,7 @@ h7 a:hover {
 .registroU {
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(250px, 1fr) minmax(20px, 1fr);
-    grid-template-rows: minmax(100px, auto) minmax(150px, auto) minmax(100px, auto) minmax(50px, auto);
+    grid-template-rows: minmax(100px, auto) minmax(150px, auto) minmax(100px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas: "espaco formu1 espaci" "espaco formu2 espaci" "espaco formu3 espaci";
 }
 
@@ -264,6 +264,13 @@ h7 a:hover {
 }
 
 .Registrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.pass {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
