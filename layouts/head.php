@@ -1,3 +1,18 @@
+<?php
+include ('action/conection.php');
+$db= getcon();
+session_start();
+if(isset($_SESSION['user'])){
+$user = $_SESSION['user'];
+}
+else{
+  $user="No";
+}
+$sql = "SELECT nom, ape1,ape2 FROM user WHERE id= '$user'";
+$val = $db->query($sql);
+$si = $val->fetch();
+$name = $si[0]." ".$si[1]." ".$si[2];
+?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/ico" href="img/Logo.ico">
@@ -37,8 +52,32 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-outline-dark my-2 my-sm-0" type="submit">Ingresar</a>
+      <?php
+      if(!is_numeric($user)){
+      ?>
+
+      <a class="btn btn-outline-dark my-2 my-sm-0" href="login.php" type="submit">Ingresar</a>
       <a class="btn btn-outline-dark my-2 my-sm-0 mx-2" href="registro.php" type="submit">Registrar</a>
+      <?php
+      }
+      else{
+      ?>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle display-7" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php echo "Hola! ".$name." " ?>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cuenta</a>
+              <a class="dropdown-item" href="action/logout.php" >Salir</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <?php
+      }
+      ?>
     </form>
   </div>
 </nav>

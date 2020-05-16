@@ -4,7 +4,12 @@
 <head>
     <!-- Required meta tags -->
     <?php
+    
     require_once('layouts/head.php');
+    if(isset($_SESSION['user'])){
+        header("Location: index.php");
+        }
+        else{
     ?>
 
         <title>Registro</title>
@@ -56,6 +61,7 @@
 </body>
 <?php
  require_once('layouts/footer.php');
+        }
   ?>
 
 </html>

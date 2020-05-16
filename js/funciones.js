@@ -36,3 +36,28 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $("#login").click(function() {
+        var email, pass;
+        email = $('#email').val();
+        pass = $('#pass').val();
+        $.ajax({
+            url: "action/login.php",
+            type: "POST",
+            data: {
+                'email': email,
+                'pass': pass
+            },
+            success: function(data) {
+                console.log(data);
+                if (data == 1) {
+                    var url = "index.php";
+                    $(location).attr('href', url);
+                } else if (data = 2) {
+                    alert("Se produjo un error al registralo. Verifique que los datos esten ingresdos correctamente y vuelva a intentarlo");
+                }
+            }
+        });
+    });
+});

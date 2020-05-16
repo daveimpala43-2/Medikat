@@ -146,6 +146,15 @@ h7 a:hover {
     background-color: #cbcbcb;
     border-radius: 50px;
     background: rgba(158, 158, 158, 0.185);
+    border: 3px solid #142850;
+}
+
+.registroUL {
+    padding: 2%;
+    background-color: #cbcbcb;
+    border-radius: 50px;
+    background: rgba(158, 158, 158, 0.185);
+    border: 3px solid #142850;
 }
 
 .form-control {
@@ -165,6 +174,28 @@ h7 a:hover {
 .btn-primary {
     background-color: #4075AD;
     color: #142850;
+    margin-bottom: 2%;
+}
+
+.Boton {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.productos {
+    margin: 2%;
+}
+
+.Cproduc {
+    border: 2px solid #142850;
+    border-radius: 6px;
+    margin: .2%;
+}
+
+.infoP {
+    text-align: justify;
+    padding: 2%;
 }
 
 
@@ -224,6 +255,13 @@ h7 a:hover {
     grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
 }
 
+.formuL {
+    display: grid;
+    grid-template-columns: minmax(20px, 350px) minmax(250px, 1fr) minmax(20px, 350px);
+    grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(20px, 50px);
+    grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
+}
+
 .registroU {
     grid-column-start: formulario;
     grid-column-end: formulario;
@@ -236,6 +274,27 @@ h7 a:hover {
     grid-template-columns: minmax(20px, 1fr) minmax(250px, 1fr) minmax(20px, 1fr);
     grid-template-rows: minmax(100px, auto) minmax(150px, auto) minmax(100px, auto) minmax(50px, auto) minmax(50px, auto);
     grid-template-areas: "espaco formu1 espaci" "espaco formu2 espaci" "espaco formu3 espaci";
+}
+
+.registroUL {
+    grid-column-start: formulario;
+    grid-column-end: formulario;
+    grid-row-start: formulario;
+    grid-row-end: formulario;
+}
+
+.registroUL {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(250px, 1fr) minmax(20px, 1fr);
+    grid-template-rows: minmax(150px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-template-areas: "espaco formu1 espaci" "espaco formu2 espaci";
+}
+
+.Boton {
+    grid-column-start: formu2;
+    grid-column-end: formu2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .nombre {
@@ -275,6 +334,25 @@ h7 a:hover {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: minmax(50px, 100px) minmax(50px, 1fr) minmax(50px, 100px);
+    grid-template-rows: minmax(50px, auto);
+    grid-template-areas: "espacioI contenido espacioD";
+}
+
+.Cproduc {
+    grid-column-start: contenido;
+    grid-column-end: contenido;
+}
+
+.Cproduc {
+    display: grid;
+    grid-template-columns: minmax(70px, 150px) minmax(50px, 1fr);
+    grid-template-rows: minmax(50px, auto);
+    grid-template-areas: "imagen infomaP";
 }
 
 
@@ -327,7 +405,7 @@ h7 a:hover {
         grid-column-end: contacto;
     }
     .form-control {
-        width: 75%;
+        width: 95%;
         color: #343838;
         font-size: 12px;
     }
@@ -335,6 +413,12 @@ h7 a:hover {
         display: grid;
         grid-template-columns: minmax(20px, 30px) minmax(250px, 1fr) minmax(20px, 30px);
         grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(20px, 50px);
+        grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
+    }
+    .formuL {
+        display: grid;
+        grid-template-columns: minmax(20px, 30px) minmax(250px, 1fr) minmax(20px, 30px);
+        grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(200px, 50px);
         grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
     }
 }

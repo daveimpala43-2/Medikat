@@ -9,7 +9,7 @@
           <div class="derecho">
           </div>
           <div class="icono">
-            <h7><a href="https://goo.gl/maps/JQgwrvhXeVTNbfFf6"> <ion-icon size="medium" name="location-outline"></ion-icon> Ubicacion   <br> <h7 class ="visible-ubi"> Dr José María Vertiz 1110, Vértiz Narvarte, Benito Juárez, 03600 Ciudad de México, CDMX</h7>  </a> </h7> 
+            <h7><a href="https://goo.gl/maps/JQgwrvhXeVTNbfFf6" target="_blank"> <ion-icon size="medium" name="location-outline"></ion-icon> Ubicacion   <br> <h7 class ="visible-ubi"> Dr José María Vertiz 1110, Vértiz Narvarte, Benito Juárez, 03600 Ciudad de México, CDMX</h7>  </a> </h7> 
           </div>
         
         </div>

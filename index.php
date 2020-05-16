@@ -22,22 +22,22 @@
            <div class="carousel-item active">
              <img src="img/carrusel/1.png" class="d-block w-100 carrusel" alt="...">
              <div class="carousel-caption d-none d-md-block">
-               <h5>First slide label</h5>
-               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               <h5>Equipo medico de calid</h5>
+               <p>Todo tipo de soluciones para cualquier problema</p>
              </div>
            </div>
            <div class="carousel-item">
              <img src="img/carrusel/2.png" class="d-block w-100 carrusel" alt="...">
              <div class="carousel-caption d-none d-md-block">
-               <h5>Second slide label</h5>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <h5>Nuestro equipo medico es de primera calida</h5>
+               <p>Contamos con cetificacion de calidad</p>
              </div>
            </div>
            <div class="carousel-item">
              <img src="img/carrusel/3.png" class="d-block w-100 carrusel" alt="...">
              <div class="carousel-caption d-none d-md-block">
-               <h5>Third slide label</h5>
-               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+               <h5>Nosotros nos preocupamos por brindar equipos de primera calidad</h5>
+               <p>La mejor calidad del mercado con todos los requerimientos del mercado</p>
              </div>
            </div>
          </div>
