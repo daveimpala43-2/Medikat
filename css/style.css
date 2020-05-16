@@ -4,7 +4,8 @@ COLORES UTILIZADOS PARA EL DESARROLLO DE LA PAGINA
 AZUL: #64D9EE;
 AZUL FUERTE: #142850
 AZUL MEDIO: #4075AD
-GRIS: #FFFFFF
+BLANCO: #FFFFFF
+GRIS: #cbcbcb
 GRIS OSCURO: #343838
 
 
@@ -12,7 +13,6 @@ PARA EFECTOS
 
 MORADO: #5D009E
 VERDE: #94EE64
-
 
 
 */
@@ -141,6 +141,32 @@ h7 a:hover {
     text-align: center;
 }
 
+.registroU {
+    padding: 2%;
+    background-color: #cbcbcb;
+    border-radius: 50px;
+    background: rgba(158, 158, 158, 0.185);
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #142850;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #343838;
+    font-size: 16px;
+}
+
+.Registrame {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #4075AD;
+    color: #142850;
+}
+
 
 /* FIN ESTILOS DE LA PAGINA */
 
@@ -191,11 +217,73 @@ h7 a:hover {
     grid-template-rows: minmax(20px, auto);
 }
 
+.formu {
+    display: grid;
+    grid-template-columns: minmax(20px, 350px) minmax(250px, 1fr) minmax(20px, 350px);
+    grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(20px, 50px);
+    grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
+}
+
+.registroU {
+    grid-column-start: formulario;
+    grid-column-end: formulario;
+    grid-row-start: formulario;
+    grid-row-end: formulario;
+}
+
+.registroU {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(250px, 1fr) minmax(20px, 1fr);
+    grid-template-rows: minmax(100px, auto) minmax(150px, auto) minmax(100px, auto) minmax(50px, auto);
+    grid-template-areas: "espaco formu1 espaci" "espaco formu2 espaci" "espaco formu3 espaci";
+}
+
+.nombre {
+    grid-column-start: formu1;
+    grid-column-end: formu1;
+}
+
+.espacod {
+    grid-column-start: espaci;
+    grid-column-end: espaci;
+}
+
+.espacoi {
+    grid-column-start: espaco;
+    grid-column-end: espaco;
+}
+
+.apes {
+    grid-column-start: formu2;
+    grid-column-end: formu2;
+}
+
+.emailG {
+    grid-column-start: formu3;
+    grid-column-end: formu3;
+}
+
+.Registrame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 
 /* FIN DE GRID */
 
 
 /* MEDIA */
+
+@media screen and (min-width: 700px) and (max-width: 830px) {
+    .formu {
+        display: grid;
+        grid-template-columns: minmax(20px, 30px) minmax(250px, 1fr) minmax(20px, 30px);
+        grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(20px, 50px);
+        grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
+    }
+}
 
 @media screen and (max-width: 600px) {
     .item2 {
@@ -230,5 +318,16 @@ h7 a:hover {
     .cont3 {
         grid-column-start: redes;
         grid-column-end: contacto;
+    }
+    .form-control {
+        width: 75%;
+        color: #343838;
+        font-size: 12px;
+    }
+    .formu {
+        display: grid;
+        grid-template-columns: minmax(20px, 30px) minmax(250px, 1fr) minmax(20px, 30px);
+        grid-template-rows: minmax(20px, 50px) minmax(150px, auto) minmax(20px, 50px);
+        grid-template-areas: "espaIz Cabeza espaDe" "espaIz formulario espaDe" "espaIz espaIn espaDe";
     }
 }
